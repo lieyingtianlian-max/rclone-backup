@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Rclone Backup is a personal desktop OAuth configuration for backing up files to Google Drive with rclone and the drive.file scope.">
+<title>Rclone Backup | Personal Google Drive backup</title>
+<style>:root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#182b3a;background:#f3f6f8}*{box-sizing:border-box}body{margin:0;line-height:1.7}main{max-width:850px;margin:3rem auto;padding:2.5rem;background:white;border:1px solid #dbe3e9;border-radius:16px}nav{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem}a{color:#125e9a;text-underline-offset:3px}a:focus-visible{outline:3px solid #125e9a;outline-offset:4px}h1{font-size:2.5rem;line-height:1.15;margin:.5rem 0 1rem}h2{font-size:1.3rem;margin-top:2rem;line-height:1.35}.eyebrow{font-weight:650;color:#456374;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem}.intro{font-size:1.15rem}.note{border-left:4px solid #327696;background:#edf5f9;padding:1rem 1.25rem}code{overflow-wrap:anywhere;background:#eef2f5;padding:.1rem .3rem;border-radius:4px}footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid #dbe3e9;font-size:.9rem;color:#456374}@media(max-width:600px){main{margin:0;padding:1.5rem;border:0;border-radius:0}h1{font-size:2rem}}</style>
+</head>
+<body>
+<main>
+<nav aria-label="Main navigation"><a href="./">Home</a><a href="privacy.html">Privacy policy</a><a href="https://github.com/lieyingtianlian-max/rclone-backup">Repository &amp; contact</a></nav>
+<p class="eyebrow">Personal desktop use</p>
+<h1>Rclone Backup</h1>
+<p class="intro">A personal Google Drive OAuth desktop app configuration used with <a href="https://rclone.org/">rclone</a> to back up and restore the owner's files.</p>
+<p>This project documents an individually operated backup setup. It is not a hosted backup service, and this website does not perform backups or offer a Google sign-in form.</p>
+<h2>How it works</h2>
+<p>The owner runs rclone on their own computer and authorizes the desktop OAuth client through Google's authorization page. Rclone then transfers selected files between that computer and Google Drive, according to the commands the owner runs. Depending on the command, this can include creating, reading, updating, downloading, or deleting accessible backup files and folders.</p>
+<h2>Google Drive permission</h2>
+<p>The intended Drive permission is <code>https://www.googleapis.com/auth/drive.file</code>. It permits access to files created by the app or otherwise explicitly authorized for use with the app, rather than unrestricted access to the entire Drive.</p>
+<p class="note">In ordinary rclone use with this scope, rclone can work with files and folders it creates. Files uploaded through the Drive website or another app generally will not be visible to it. This setup is suited to creating personal backups; it is not intended to read or back up an entire pre-existing Drive.</p>
+<p>See <a href="https://rclone.org/drive/#scopes">rclone's scope documentation</a> and <a href="https://developers.google.com/workspace/drive/api/guides/api-specific-auth">Google's Drive scope documentation</a>.</p>
+<h2>Data and control</h2>
+<p>File contents and metadata are processed by rclone on the owner's computer and by Google Drive to carry out the requested operations. OAuth tokens are normally saved in the local rclone configuration. This website does not receive those tokens or backup files. Read the <a href="privacy.html">privacy policy</a> for storage, retention, and revocation details.</p>
+<h2>Contact</h2>
+<p>For project questions, contact the maintainer through the <a href="https://github.com/lieyingtianlian-max/rclone-backup/issues">repository's GitHub issues</a>. Issues are public: do not include credentials, tokens, private files, or sensitive logs.</p>
+<footer>Maintained by <a href="https://github.com/lieyingtianlian-max">lieyingtianlian-max</a>. An independent personal project; not affiliated with or endorsed by Google or the rclone project.</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy practices for the personal Rclone Backup desktop Google Drive OAuth configuration and its informational website.">
+<title>Privacy policy | Rclone Backup</title>
+<style>:root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#182b3a;background:#f3f6f8}*{box-sizing:border-box}body{margin:0;line-height:1.7}main{max-width:850px;margin:3rem auto;padding:2.5rem;background:white;border:1px solid #dbe3e9;border-radius:16px}nav{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem}a{color:#125e9a;text-underline-offset:3px}a:focus-visible{outline:3px solid #125e9a;outline-offset:4px}h1{font-size:2.5rem;line-height:1.15;margin:.5rem 0 1rem}h2{font-size:1.3rem;margin-top:2rem;line-height:1.35}.eyebrow{font-weight:650;color:#456374;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem}.intro{font-size:1.15rem}.note{border-left:4px solid #327696;background:#edf5f9;padding:1rem 1.25rem}code{overflow-wrap:anywhere;background:#eef2f5;padding:.1rem .3rem;border-radius:4px}footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid #dbe3e9;font-size:.9rem;color:#456374}@media(max-width:600px){main{margin:0;padding:1.5rem;border:0;border-radius:0}h1{font-size:2rem}}</style>
+</head>
+<body>
+<main>
+<nav aria-label="Main navigation"><a href="./">Home</a><a href="privacy.html">Privacy policy</a><a href="https://github.com/lieyingtianlian-max/rclone-backup">Repository &amp; contact</a></nav>
+<p class="eyebrow">Rclone Backup</p>
+<h1>Privacy policy</h1>
+<p>Effective date: <time datetime="2026-10-19">19 October 2026</time></p>
+<p>This policy describes the personal desktop Google Drive OAuth configuration called Rclone Backup, maintained by <a href="https://github.com/lieyingtianlian-max">lieyingtianlian-max</a>, and this informational website. It covers the owner's use of rclone with the <code>drive.file</code> scope. It does not describe other rclone configurations or promise protections for software or services operated by others.</p>
+<h2>Data accessed and purpose</h2>
+<p>When the owner authorizes the app, rclone receives OAuth authorization tokens and uses the Google Drive API to access permitted file contents and metadata, such as names, file IDs, sizes, modification times, and folder information. These are used to upload personal backups, list or check backup files, restore or download files, and perform updates or deletions requested through rclone commands.</p>
+<p>The requested scope is <code>https://www.googleapis.com/auth/drive.file</code>. It allows access to files created by the app or otherwise explicitly authorized for it. In ordinary rclone use, this means files and folders rclone creates; it does not automatically expose all existing Drive files. This configuration does not request Gmail access. Google account sign-in takes place with Google; this website does not ask for a Google password.</p>
+<h2>Processing and storage</h2>
+<p>Rclone runs on the owner's computer and communicates with Google to authorize access and transfer data. Backup files are stored in the owner's Google Drive; source files and restored copies remain wherever the owner saves them locally. No separate backup server is operated by this project.</p>
+<p>OAuth access and refresh tokens are normally stored in the rclone configuration on the computer running rclone, along with configured OAuth client settings. Configuration location and protection depend on the installation. Rclone configuration encryption is optional; this policy does not claim it has been enabled. File encryption is also not provided by this website, and this policy does not claim that backups are end-to-end encrypted.</p>
+<p>Depending on the commands and settings used, rclone may write logs or cache files containing file names, paths, metadata, or diagnostic details. The owner controls those settings and local files.</p>
+<h2>Sharing and other uses</h2>
+<p>Google receives data needed to provide OAuth authorization and Drive storage. This personal setup does not send Google user data to an additional project-operated service, sell that data, use it for advertising, or use it to train AI models. It does not provide another person with access to the owner's backup files. Any sharing the owner separately configures in Google Drive or other tools is outside this setup.</p>
+<h2>This website and third-party services</h2>
+<p>This is a static informational site hosted on GitHub Pages. The pages contain no analytics scripts, tracking pixels, sign-in forms, or application cookies. They do not receive backup contents or OAuth tokens. GitHub may collect visitor information, including IP addresses, in providing its hosting service; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>. Google's handling of account and Drive data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<h2>Retention, deletion, and revoking access</h2>
+<p>Backup files remain in Google Drive until the owner deletes them or an owner-configured operation removes them. Local source files, restored files, configuration, logs, and caches remain until the owner removes them or configured cleanup applies. Google Drive trash, version history, and provider retention may affect when cloud copies are permanently removed; this project cannot promise immediate erasure.</p>
+<p>The owner can revoke the app's access in <a href="https://myaccount.google.com/connections">Google Account third-party connections</a> and remove its local rclone configuration and token copies. Revoking access stops future authorized access but does not itself delete existing backups, downloaded files, or logs. To remove backup data, delete the relevant Drive files and manage the Drive trash separately.</p>
+<h2>Changes and contact</h2>
+<p>If the setup's data practices change, this policy should be updated before those new practices are used. The effective date above identifies this version.</p>
+<p>For questions, contact the maintainer through <a href="https://github.com/lieyingtianlian-max/rclone-backup/issues">GitHub issues</a>. These are public; do not post tokens, OAuth client secrets, private files, or sensitive logs.</p>
+<footer>Maintained by <a href="https://github.com/lieyingtianlian-max">lieyingtianlian-max</a>. An independent personal project; not affiliated with or endorsed by Google or the rclone project.</footer>
+</main>
+</body>
+</html>
